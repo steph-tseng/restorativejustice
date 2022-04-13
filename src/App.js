@@ -44,65 +44,71 @@ const Home = () => {
         marginLeft: "-1vw",
         overflowX: "hidden",
         overflowY: "hidden",
+        // objectFit: "cover",
+        // backgroundImage:
+        //   "url(https://images.unsplash.com/photo-1495854544774-960863c76ed3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80)",
       }}
     >
       <br />
       <Grid item xs={12}>
         <img
           src="https://images.unsplash.com/photo-1495854544774-960863c76ed3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80"
-          alt="dark escalator"
+          alt="pink and purple lavender field with low opacity"
           style={{
             width: "100vw",
-            maxHeight: "100vh",
+            height: "100vh",
             opacity: ".4",
             objectFit: "cover",
             zIndex: "-5",
           }}
         />
       </Grid>
-      <Typography
-        align="center"
-        variant="h2"
-        style={{
-          position: "absolute",
-          padding: theme.spacing(20),
-          paddingTop: theme.spacing(10),
-          top: theme.spacing(25),
-          zIndex: 500,
-          color: "#fff",
-        }}
-      >
-        What is Restorative Justice?
-      </Typography>
-      <Typography
-        align="justify"
-        paragraph="true"
-        variant="body1"
-        style={{
-          padding: theme.spacing(20),
-          paddingTop: theme.spacing(10),
-          position: "absolute",
-          color: "#fff",
-          zIndex: 500,
-          top: theme.spacing(35),
-        }}
-      >
-        Restorative justice (RJ) reconceptualizes the way justice is carried
-        out. Rather than thinking about justice as punishment to be doled out by
-        a neutral third party, it thinks about justice as fulfilling the needs
-        of the victim. Furthermore, it does not think about justice as
-        determining guilt or who is good/bad. The criminal justice system
-        focuses on the needs of the state to maintain law and order. Meanwhile,
-        RJ focuses on the relationship between the victim and perpetrator, as
-        well as their ties to the greater community. The two parties are given
-        an opportunity to communicate, whether directly or indirectly, so that
-        the victim is able to receive answers to any questions they may have
-        surrounding the crime. In this communication, the perpetrator is also
-        confronted with the harm that they have caused and must take
-        responsibility for that harm. The focus, too, is on how to rebuild the
-        relationship between the two involved parties and their community so
-        that neither feels neglected or alienated.
-      </Typography>
+      <Grid item style={{ position: "absolute", marginTop: "5rem" }}>
+        <Typography
+          align="center"
+          variant="h2"
+          style={{
+            padding: theme.spacing(20),
+            top: theme.spacing(25),
+            zIndex: 500,
+            color: "#fff",
+            fontSize: "4rem",
+          }}
+        >
+          What is Restorative Justice?
+        </Typography>
+      </Grid>
+      <Grid item style={{ position: "absolute", marginTop: "15rem" }}>
+        <Typography
+          align="justify"
+          paragraph="true"
+          variant="body1"
+          style={{
+            padding: theme.spacing(20),
+            paddingTop: theme.spacing(10),
+            color: "#fff",
+            zIndex: 500,
+            top: theme.spacing(35),
+            fontSize: "1rem",
+          }}
+        >
+          Restorative justice (RJ) reconceptualizes the way justice is carried
+          out. Rather than thinking about justice as punishment to be doled out
+          by a neutral third party, it thinks about justice as fulfilling the
+          needs of the victim. Furthermore, it does not think about justice as
+          determining guilt or who is good/bad. The criminal justice system
+          focuses on the needs of the state to maintain law and order.
+          Meanwhile, RJ focuses on the relationship between the victim and
+          perpetrator, as well as their ties to the greater community. The two
+          parties are given an opportunity to communicate, whether directly or
+          indirectly, so that the victim is able to receive answers to any
+          questions they may have surrounding the crime. In this communication,
+          the perpetrator is also confronted with the harm that they have caused
+          and must take responsibility for that harm. The focus, too, is on how
+          to rebuild the relationship between the two involved parties and their
+          community so that neither feels neglected or alienated.
+        </Typography>
+      </Grid>
     </Grid>
   );
 };
@@ -110,11 +116,12 @@ const Home = () => {
 const About = () => {
   const theme = useTheme();
   return (
-    <>
+    <Grid container justifyContent={"center"}>
       <Paper
         elevation={3}
         style={{
-          margin: theme.spacing(15),
+          width: "80vw",
+          marginTop: theme.spacing(12),
         }}
       >
         <Grid
@@ -160,7 +167,7 @@ const About = () => {
           </Grid>
         </Grid>
       </Paper>
-    </>
+    </Grid>
   );
 };
 
@@ -172,12 +179,13 @@ const ModelsOfRJ = () => {
     setOpen(!open);
   };
   return (
-    <>
+    <Grid container justifyContent={"center"}>
       <Paper
         elevation={3}
         style={{
-          margin: theme.spacing(15),
-          marginTop: theme.spacing(15),
+          width: "80vw",
+          // margin: theme.spacing(15),
+          marginTop: theme.spacing(12),
           marginBottom: theme.spacing(0),
         }}
       >
@@ -187,7 +195,7 @@ const ModelsOfRJ = () => {
           spacing={2}
           style={{
             padding: theme.spacing(6),
-            paddingTop: theme.spacing(2),
+            paddingTop: theme.spacing(4),
             paddingBottom: theme.spacing(4),
           }}
         >
@@ -375,15 +383,31 @@ const ModelsOfRJ = () => {
               Bibliography
             </Typography>
             <Typography>
+              Karp, David R.{" "}
+              <i>
+                The Little Book of Restorative Justice for Colleges and
+                Universities.
+              </i>{" "}
+              New York: Good Books, 2015.
+            </Typography>
+            <Typography>
               University of San Diego. “Research and Theory.” Accessed April 12,
-              2022.
+              2022.{" "}
               <a href="https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php">
                 https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php.
               </a>
             </Typography>
+            <Typography>
+              Zehr, Howard. <i>The Little Book of Restorative Justice.</i> New
+              York: Good Books, 2015.{" "}
+              <a href="https://www.sandiego.edu/soles/restorative-justice/">
+                https://www.sandiego.edu/soles/restorative-justice/
+              </a>
+              .
+            </Typography>
           </Grid>
         </Grid>
       </Paper>
-    </>
+    </Grid>
   );
 };

@@ -10,35 +10,48 @@ const Navbar = () => {
       <AppBar
         position="absolute"
         enableColorOnDark
-        style={{ backgroundColor: "#CF9FFF", padding: theme.spacing(2) }}
+        style={{
+          backgroundColor: "#CF9FFF",
+          padding: theme.spacing(1),
+        }}
       >
         <Grid
           container
           spacing={3}
-          style={{ justifyContent: "left", alignContent: "center" }}
+          style={{
+            justifyContent: "center",
+            alignContent: "center",
+            alignItems: "center",
+          }}
         >
           <Grid item>
-            {/* <Button style={{ padding: 0 }}> */}
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <img
+            <Button style={{}}>
+              <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+                {/* <img
                 src={logo}
                 alt="Restorative Justice Logo"
                 style={{ height: theme.spacing(5), borderRadius: "10px" }}
-              />
-              {/* <Typography>Restorative Justice</Typography> */}
-            </Link>
-            {/* </Button> */}
+              /> */}
+                <Typography>Restorative Justice</Typography>
+              </Link>
+            </Button>
           </Grid>
           <Grid item>
-            <Button style={{}}>
-              <Link to="/about" style={{ textDecoration: "none" }}>
+            <Button style={{ paddingTop: theme.spacing(1) }}>
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
                 <Typography>About This Project</Typography>
               </Link>
             </Button>
           </Grid>
           <Grid item>
-            <Button style={{}}>
-              <Link to="/modelsofrj" style={{ textDecoration: "none" }}>
+            <Button style={{ paddingTop: theme.spacing(1) }}>
+              <Link
+                to="/modelsofrj"
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
                 <Typography>Models of Restorative Justice</Typography>
               </Link>
             </Button>
