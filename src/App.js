@@ -4,7 +4,6 @@ import {
   Divider,
   Grid,
   List,
-  ListItem,
   ListItemButton,
   ListItemText,
   Paper,
@@ -186,7 +185,7 @@ const ModelsOfRJ = () => {
           width: "80vw",
           // margin: theme.spacing(15),
           marginTop: theme.spacing(12),
-          marginBottom: theme.spacing(0),
+          marginBottom: theme.spacing(5),
         }}
       >
         <Grid
@@ -242,97 +241,125 @@ const ModelsOfRJ = () => {
           </Grid>
           <br />
           <Divider />
-          <Grid item xs={12}>
-            <Typography variant="h5" id="BasicOverview">
-              Basic Overview
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="h6" id="RJConference">
-              Restorative Conferencing
-            </Typography>
-            <Typography style={{ textIndent: "2rem" }}>
-              <b>Restorative conferencing</b> is a facilitated process guided by
-              a scripted series of questions that help identify and repair harm.
-              It has its roots in the indigenous Maori justice process in New
-              Zealand. Conferencing became popularized worldwide in the 1990s as
-              a result of research by the prominent Australian law professor
-              John Braithwaite. In 1998 in Baltimore, Maryland, Lauren Abramson
-              founded the Community Conference Center, now called Restorative
-              Response Baltimore, one of the most active restorative justice
-              centers in the U.S (USD 2022).
-            </Typography>
-            <Typography gutterBottom>
-              Restorative Conferencing tends to follow a script, a template of
-              which can be found here:{" "}
-              <a
-                href="https://www.iirp.edu/news/restorative-conference-facilitator-script"
-                target={"_blank"}
-                rel={"noreferrer"}
-              >
-                RJ Conference Script
-              </a>
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="h6" id="VOC">
-              Victim-Offender Conferencing
-            </Typography>
-            <Typography gutterBottom style={{ textIndent: "2rem" }}>
-              <b>Victim Offender Conferences (VOC)</b> began because a probation
-              officer and a coworker were frustrated with how offenders were
-              able to remain insulated from the harm they had caused to their
-              victims and their community. They began VOC as a way to ensure
-              that the offenders would take accountability for their crimes. The
-              offenders are sentenced by judges to meeting their victims and
-              apologizing for their actions. Furthermore, they are expected to
-              try to make amends and meet any needs that the harm they caused
-              created. The meeting is led by a trained facilitator who can help
-              maintain a safe and structured environment while the victim and
-              offender are each able to share their sides of the story.
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="h6" id="CircleProcesses">
-              Circle Practices
-            </Typography>
-            <Typography gutterBottom style={{ textIndent: "2rem" }}>
-              <b>Circle practices</b> draw on Native American and Canadian First
-              Nations traditions. Circle facilitators invite participants to
-              answer questions by passing a talking piece that provides each
-              person equal opportunity to participate. Circles became popular
-              with the 1996 publication of Rupert Ross' Returning to the
-              Teachings: Exploring Aboriginal Justice and the 2003 Peacemaking
-              Circles: From Crime to Community, by Kay Pranis, Barry Stuart, and
-              Mark Wedge. Circles are used widely as a means to build community,
-              respond to crime or misconduct, and to offer support for people
-              returning to a community after incarceration or suspension (USD
-              2022).
-            </Typography>
-            <Typography>
-              One place that this method would be especially useful would be
-              within higher education dorms or classrooms, when the parties are
-              in constant contact. If a member of a hall commits a
-              microaggression against another member of the hall, it can make
-              that member feel unwelcome and unsafe within their living space.
-              It is also important to involve all of the members of the hall so
-              that the perpetrator can be held accountable for future
-              microaggressions.
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="h6" id="TruthAndReconciliation">
-              Truth and Reconciliation Commissions
-            </Typography>
-            <Typography gutterBottom style={{ textIndent: "2rem" }}>
-              <b>Truth and Reconciliation Commissions</b> are public inquiries
-              into past harms, providing a community with the opportunity to
-              explore the nature of the harm and for individuals to articulate
-              the impact as well as express remorse. The first TRC took place in
-              Uganda in 1974 and the most well-known is the South Africa TRC of
-              the 1990s led by Bishop Desmond Tutu. He wrote about it in No
-              Future Without Forgiveness (USD 2022).
-            </Typography>
+          <Grid container>
+            <Grid
+              item
+              xs={12}
+              style={{
+                marginBottom: theme.spacing(2),
+                marginTop: theme.spacing(2),
+              }}
+            >
+              <Typography variant="h5" id="BasicOverview" gutterBottom>
+                Basic Overview
+              </Typography>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/SKKhlCaf6ZQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6" id="RJConference">
+                Restorative Conferencing
+              </Typography>
+              <Typography style={{ textIndent: "2rem" }}>
+                <b>Restorative conferencing</b> is a facilitated process guided
+                by a scripted series of questions that help identify and repair
+                harm. It has its roots in the indigenous Maori justice process
+                in New Zealand. Conferencing became popularized worldwide in the
+                1990s as a result of research by the prominent Australian law
+                professor John Braithwaite. In 1998 in Baltimore, Maryland,
+                Lauren Abramson founded the Community Conference Center, now
+                called Restorative Response Baltimore, one of the most active
+                restorative justice centers in the U.S (USD 2022).
+              </Typography>
+              <Typography gutterBottom>
+                Restorative Conferencing tends to follow a script, a template of
+                which can be found here:{" "}
+                <a
+                  href="https://www.iirp.edu/news/restorative-conference-facilitator-script"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  RJ Conference Script
+                </a>
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6" id="VOC">
+                Victim-Offender Conferencing
+              </Typography>
+              <Typography gutterBottom style={{ textIndent: "2rem" }}>
+                <b>Victim Offender Conferences (VOC)</b> began because a
+                probation officer and a coworker were frustrated with how
+                offenders were able to remain insulated from the harm they had
+                caused to their victims and their community. They began VOC as a
+                way to ensure that the offenders would take accountability for
+                their crimes. The offenders are sentenced by judges to meeting
+                their victims and apologizing for their actions. Furthermore,
+                they are expected to try to make amends and meet any needs that
+                the harm they caused created. The meeting is led by a trained
+                facilitator who can help maintain a safe and structured
+                environment while the victim and offender are each able to share
+                their sides of the story.
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6" id="CircleProcesses">
+                Circle Practices
+              </Typography>
+              <Typography style={{ textIndent: "2rem" }}>
+                <b>Circle practices</b> draw on Native American and Canadian
+                First Nations traditions. Circle facilitators invite
+                participants to answer questions by passing a talking piece that
+                provides each person equal opportunity to participate. Circles
+                became popular with the 1996 publication of Rupert Ross'
+                Returning to the Teachings: Exploring Aboriginal Justice and the
+                2003 Peacemaking Circles: From Crime to Community, by Kay
+                Pranis, Barry Stuart, and Mark Wedge. Circles are used widely as
+                a means to build community, respond to crime or misconduct, and
+                to offer support for people returning to a community after
+                incarceration or suspension (USD 2022).
+              </Typography>
+              <Typography gutterBottom style={{ textIndent: "2rem" }}>
+                One place that this method would be especially useful would be
+                within higher education dorms or classrooms, when the parties
+                are in constant contact. If a member of a hall commits a
+                microaggression against another member of the hall, it can make
+                that member feel unwelcome and unsafe within their living space.
+                It is also important to involve all of the members of the hall
+                so that the perpetrator can be held accountable for future
+                microaggressions.
+              </Typography>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/1-RZYSTJAAo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h6" id="TruthAndReconciliation">
+                Truth and Reconciliation Commissions
+              </Typography>
+              <Typography gutterBottom style={{ textIndent: "2rem" }}>
+                <b>Truth and Reconciliation Commissions</b> are public inquiries
+                into past harms, providing a community with the opportunity to
+                explore the nature of the harm and for individuals to articulate
+                the impact as well as express remorse. The first TRC took place
+                in Uganda in 1974 and the most well-known is the South Africa
+                TRC of the 1990s led by Bishop Desmond Tutu. He wrote about it
+                in No Future Without Forgiveness (USD 2022).
+              </Typography>
+            </Grid>
           </Grid>
           <br />
           <Divider />
