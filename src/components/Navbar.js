@@ -21,9 +21,13 @@ const Navbar = () => {
           spacing={3}
           style={{
             display: "flex",
-            justifyContent: theme.breakpoints.down("lg") ? "center" : "left",
-            // alignContent: "center",
-            // alignItems: "center",
+            [theme.breakpoints.down("md")]: {
+              justifyContent: "left",
+            },
+            [theme.breakpoints.up("lg")]: {
+              justifyContent: "center",
+            },
+            justifyContent: "center",
             overflow: "scroll",
             whiteSpace: "nowrap",
             flexWrap: "nowrap",

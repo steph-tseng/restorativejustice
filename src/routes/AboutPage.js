@@ -10,6 +10,7 @@ const AboutPage = () => {
         style={{
           width: "80vw",
           marginTop: theme.spacing(12),
+          marginBottom: theme.spacing(6),
         }}
       >
         <Grid
@@ -21,7 +22,7 @@ const AboutPage = () => {
             <Typography variant="h4" gutterBottom>
               About this project
             </Typography>
-            <Typography>
+            <Typography style={{ textIndent: "2rem" }}>
               This project is focused on restorative justice, which is a
               well-defined field meant for reconceptualizing justice and
               community relationships.
@@ -30,7 +31,7 @@ const AboutPage = () => {
           <br />
           <Grid item>
             <Typography variant="h6">Why a website?</Typography>
-            <Typography>
+            <Typography style={{ textIndent: "2rem" }}>
               I wanted this research to be available in a widely accessible
               format.
             </Typography>
@@ -40,7 +41,7 @@ const AboutPage = () => {
             <Typography variant="h6">
               Why am I interested in this topic?
             </Typography>
-            <Typography>
+            <Typography style={{ textIndent: "2rem" }}>
               As a philosophy major, I am intrigued by the potential for both
               epistemological and moral education that RJ is able to provide. In
               other words, it is interesting to consider this framework for

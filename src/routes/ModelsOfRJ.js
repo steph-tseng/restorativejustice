@@ -158,31 +158,33 @@ const ModelsOfRJ = (props) => {
             ></iframe>
           </Grid>
           <Grid item xs={12}>
-            <Typography variant="h6" id="RJConference">
-              Restorative Conferencing
-            </Typography>
-            <Typography style={{ textIndent: "2rem" }}>
-              <b>Restorative conferencing</b> is a facilitated process guided by
-              a scripted series of questions that help identify and repair harm.
-              It has its roots in the indigenous Maori justice process in New
-              Zealand. Conferencing became popularized worldwide in the 1990s as
-              a result of research by the prominent Australian law professor
-              John Braithwaite. In 1998 in Baltimore, Maryland, Lauren Abramson
-              founded the Community Conference Center, now called Restorative
-              Response Baltimore, one of the most active restorative justice
-              centers in the U.S (USD 2022).
-            </Typography>
-            <Typography>
-              Restorative Conferencing tends to follow a script, a template of
-              which can be found here:{" "}
-              <a
-                href="https://www.iirp.edu/news/restorative-conference-facilitator-script"
-                target={"_blank"}
-                rel={"noreferrer"}
-              >
-                RJ Conference Script
-              </a>
-            </Typography>
+            <Grid container style={{ width: "100%" }}>
+              <Typography variant="h6" id="RJConference">
+                Restorative Conferencing
+              </Typography>
+              <Typography style={{ textIndent: "2rem" }}>
+                <b>Restorative conferencing</b> is a facilitated process guided
+                by a scripted series of questions that help identify and repair
+                harm. It has its roots in the indigenous Maori justice process
+                in New Zealand. Conferencing became popularized worldwide in the
+                1990s as a result of research by the prominent Australian law
+                professor John Braithwaite. In 1998 in Baltimore, Maryland,
+                Lauren Abramson founded the Community Conference Center, now
+                called Restorative Response Baltimore, one of the most active
+                restorative justice centers in the U.S (USD 2022).
+              </Typography>
+              <Typography>
+                Restorative Conferencing tends to follow a script, a template of
+                which can be found here:{" "}
+                <a
+                  href="https://www.iirp.edu/news/restorative-conference-facilitator-script"
+                  target={"_blank"}
+                  rel={"noreferrer"}
+                >
+                  RJ Conference Script
+                </a>
+              </Typography>
+            </Grid>
             <iframe
               width="560"
               height="315"
@@ -387,40 +389,47 @@ const ModelsOfRJ = (props) => {
       >
         <Grid
           container
-          direction={"column"}
           spacing={2}
           style={{
             padding: theme.spacing(8),
             paddingBottom: theme.spacing(6),
+            overflowWrap: "break-word",
+            wordWrap: "break-word",
           }}
         >
           <Grid item xs={12}>
             <Typography variant="h5" id="bib" gutterBottom>
               Bibliography
             </Typography>
-            <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
-              Karp, David R.{" "}
-              <i>
-                The Little Book of Restorative Justice for Colleges and
-                Universities.
-              </i>{" "}
-              New York: Good Books, 2015.
-            </Typography>
-            <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
-              University of San Diego. “Research and Theory.” Accessed April 12,
-              2022.{" "}
-              <a href="https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php">
-                https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php.
-              </a>
-            </Typography>
-            <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
-              Zehr, Howard. <i>The Little Book of Restorative Justice.</i> New
-              York: Good Books, 2015.{" "}
-              <a href="https://www.sandiego.edu/soles/restorative-justice/">
-                https://www.sandiego.edu/soles/restorative-justice/
-              </a>
-              .
-            </Typography>
+            <Grid item xs={12}>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Karp, David R.{" "}
+                <i>
+                  The Little Book of Restorative Justice for Colleges and
+                  Universities.
+                </i>{" "}
+                New York: Good Books, 2015.
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                University of San Diego. “Research and Theory.” Accessed April
+                12, 2022.{" "}
+                <a href="https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php">
+                  https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php.
+                </a>
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Zehr, Howard. <i>The Little Book of Restorative Justice.</i> New
+                York: Good Books, 2015.{" "}
+                <a href="https://www.sandiego.edu/soles/restorative-justice/">
+                  https://www.sandiego.edu/soles/restorative-justice/
+                </a>
+                .
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Paper>

@@ -13,8 +13,8 @@ const HomePage = () => {
         style={{
           backgroundColor: "#000",
           maxHeight: "100vh",
-          width: "101vw",
-          marginLeft: "-1vw",
+          // width: "101vw",
+          // marginLeft: "-1vw",
           overflow: "hidden",
         }}
       >
@@ -22,7 +22,7 @@ const HomePage = () => {
           src="https://images.unsplash.com/photo-1495854544774-960863c76ed3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80"
           alt="pink and purple lavender field with low opacity"
           style={{
-            width: "101vw",
+            width: "100vw",
             height: "100vh",
             opacity: ".4",
             objectFit: "cover",
@@ -32,62 +32,59 @@ const HomePage = () => {
       </Grid>
       <Grid
         item
-        xs={12}
+        container
         style={{
           position: "absolute",
           marginTop: theme.breakpoints.down("md") ? "5rem" : "3rem",
+          padding: "10vw",
+          maxHeight: "80vh",
+          overflowY: "scroll",
         }}
       >
-        <Typography
-          align="center"
-          variant="h2"
-          style={{
-            padding: "10vw",
-            top: theme.spacing(25),
-            zIndex: 500,
-            color: "#fff",
-            fontSize: theme.breakpoints.down("md") ? "3rem" : "5rem",
-          }}
-        >
-          What is Restorative Justice?
-        </Typography>
-      </Grid>
-      <Grid
-        item
-        style={{
-          position: "absolute",
-          marginTop: theme.breakpoints.up("md") ? "17rem" : "7rem",
-        }}
-      >
-        <Typography
-          align="justify"
-          paragraph="true"
-          variant="body1"
-          style={{
-            padding: "10vw",
-            paddingTop: theme.breakpoints.down("lg") ? "5vh" : "3vh",
-            color: "#fff",
-            zIndex: 500,
-            fontSize: "1rem",
-            textIndent: "2rem",
-          }}
-        >
-          Restorative justice (RJ) reconceptualizes the way justice is carried
-          out. Rather than thinking about justice as punishment to be doled out
-          by a neutral third party, it thinks about justice as fulfilling the
-          needs of the victim. Furthermore, it does not think about justice as
-          determining guilt or who is good/bad. The criminal justice system
-          focuses on the needs of the state to maintain law and order.
-          Meanwhile, RJ focuses on the relationship between the victim and
-          perpetrator, as well as their ties to the greater community. The two
-          parties are given an opportunity to communicate, whether directly or
-          indirectly, so that the victim is able to receive answers to any
-          questions they may have surrounding the crime. In this communication,
-          the perpetrator is also confronted with the harm that they have caused
-          and must take responsibility for that harm. The focus, too, is on how
-          to rebuild the relationship between the two involved parties and their
-          community so that neither feels neglected or alienated.
-        </Typography>
+        <Grid item xs={12} style={{}}>
+          <Typography
+            align="center"
+            variant="h2"
+            style={{
+              zIndex: 500,
+              color: "#fff",
+              fontSize: theme.breakpoints.down("md") ? "3rem" : "5rem",
+            }}
+          >
+            What is Restorative Justice?
+          </Typography>
+        </Grid>
+        <Grid item style={{}}>
+          <Typography
+            align="justify"
+            paragraph="true"
+            variant="body1"
+            style={{
+              paddingTop: theme.breakpoints.down("lg") ? "3vh" : "3vh",
+              color: "#fff",
+              zIndex: 500,
+              fontSize: "1rem",
+              textIndent: "2rem",
+            }}
+          >
+            Restorative justice (RJ) reconceptualizes the way justice is carried
+            out. Rather than thinking about justice as punishment to be doled
+            out by a neutral third party, it thinks about justice as fulfilling
+            the needs of the victim. Furthermore, it does not think about
+            justice as determining guilt or who is good/bad. The criminal
+            justice system focuses on the needs of the state to maintain law and
+            order. Meanwhile, RJ focuses on the relationship between the victim
+            and perpetrator, as well as their ties to the greater community. The
+            two parties are given an opportunity to communicate, whether
+            directly or indirectly, so that the victim is able to receive
+            answers to any questions they may have surrounding the crime. In
+            this communication, the perpetrator is also confronted with the harm
+            that they have caused and must take responsibility for that harm.
+            The focus, too, is on how to rebuild the relationship between the
+            two involved parties and their community so that neither feels
+            neglected or alienated.
+          </Typography>
+        </Grid>
       </Grid>
       <Grid item style={{ padding: "15vh" }}>
         <Typography
@@ -118,7 +115,7 @@ const HomePage = () => {
               padding: "3vw",
               borderRight: "1px solid #dccffe",
               [theme.breakpoints.down("md")]: {
-                borderRight: null,
+                borderRight: 0,
               },
               borderBottom: "1px solid #dccffe",
             }}
@@ -155,7 +152,13 @@ const HomePage = () => {
             xs={12}
             md={6}
             lg={6}
-            style={{ padding: "3vw", borderRight: "1px solid #dccffe" }}
+            style={{
+              padding: "3vw",
+              borderRight: "1px solid #dccffe",
+              [theme.breakpoints.down("md")]: {
+                borderRight: 0,
+              },
+            }}
           >
             <Typography align="center" variant="h6" gutterBottom>
               Repairing Harm

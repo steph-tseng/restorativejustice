@@ -79,17 +79,20 @@ const BiCoPage = () => {
             </Typography>
             <Typography style={{ textIndent: "2rem" }}>
               This interviewee generally viewed the (social) honor code as
-              providing common sense guidance. They said that it creates an
+              providing guidance they thought of as being common sense. For
+              them, the honor code was more so affirming their existing beliefs
+              than imposing new ones upon them. They said that it creates an
               "underlying pressure of being nice and then being kind to each
               other." Before coming to BMC, this person believed that basic
               respect was enough to guide social interactions. After, they
-              learned about racism in America and saw how basic respect was not
-              enough. Though this knowledge has not influenced <i>who</i> they
-              make friends with, it has shaped how they interact with those
+              learned about the racism in America and saw how basic respect was
+              not enough. Though this knowledge has not influenced <i>who</i>{" "}
+              they make friends with, it has shaped how they interact with those
               people. More specifically, it has made them more careful in how
               they approach certain topics and even whether they bring up those
               topics at all.
             </Typography>
+            <Typography></Typography>
           </Grid>
         </Grid>
       </Paper>
@@ -115,7 +118,20 @@ const BiCoPage = () => {
               Senior humanities major at Bryn Mawr, Asian-American
             </Typography>
             <Typography style={{ textIndent: "2rem" }}>
-              For this person, the honor code is largely academic.
+              For this person, the honor code is mainly academic. They were not
+              explicitly aware of the social component of the honor code before
+              the interview, they seemed to be aware of certain aspects of the
+              code: the part that encourages students to confront the people who
+              have violated the honor code and the other people they may have
+              other conflicts with. They describe how "people at the school
+              including [them]...are very afraid of confrontation, because you
+              don't want to burn bridges, especially when you're going to see
+              some person over and over again and they'll just be awkward. If
+              you confront them and make them feel like they're they're in a
+              position where they have to be defensive...and it will affect our
+              relationship." I found this comment insightful as it clearly shows
+              why students are generally wary of confronting their peers,
+              despite the practice being endorsed by the honor code.
             </Typography>
           </Grid>
         </Grid>
@@ -141,7 +157,14 @@ const BiCoPage = () => {
             <Typography variant="h6">
               Junior humanities major at Bryn Mawr, white American
             </Typography>
-            <Typography style={{ textIndent: "2rem" }}></Typography>
+            <Typography style={{ textIndent: "2rem" }}>
+              Though this interviewee remembers going over the honor code when
+              they were applying and in THRIVE, they do not really remember much
+              of it now. Thinking about what they think the honor code should
+              be, they said that they wanted it to be about being "a decent
+              human being considering your classmates feelings and creating a
+              safe place for all students on campus."
+            </Typography>
           </Grid>
         </Grid>
       </Paper>
