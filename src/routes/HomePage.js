@@ -104,8 +104,8 @@ const HomePage = () => {
           justifyContent={"center"}
           style={{
             marginTop: "5vh",
-            borderTop: "5px solid #d8b6fa",
-            borderBottom: "5px solid #d8b6fa",
+            borderTop: "5px solid #dccffe",
+            borderBottom: "5px solid #dccffe",
             paddingTop: "5vh",
             paddingBottom: "5vh",
           }}
@@ -116,11 +116,11 @@ const HomePage = () => {
             md={6}
             style={{
               padding: "3vw",
-              borderRight: "1px solid #d8b6fa",
+              borderRight: "1px solid #dccffe",
               [theme.breakpoints.down("md")]: {
                 borderRight: null,
               },
-              borderBottom: "1px solid #d8b6fa",
+              borderBottom: "1px solid #dccffe",
             }}
           >
             <Typography align="center" variant="h6" gutterBottom>
@@ -129,7 +129,9 @@ const HomePage = () => {
             <Typography align="center">
               "Restorative justice places decision-making in the hands of the
               people who care the most—offenders and harmed parties" (
-              <a href="/modelsofrj#bib">Karp 2015:</a>
+              <a href="/modelsofrj#bib" style={{ textDecoration: "none" }}>
+                Karp 2015:
+              </a>
               9).
             </Typography>
           </Grid>
@@ -137,7 +139,7 @@ const HomePage = () => {
             item
             xs={12}
             md={6}
-            style={{ padding: "3vw", borderBottom: "1px solid #d8b6fa" }}
+            style={{ padding: "3vw", borderBottom: "1px solid #dccffe" }}
           >
             <Typography align="center" variant="h6" gutterBottom>
               Active Accountability
@@ -153,7 +155,7 @@ const HomePage = () => {
             xs={12}
             md={6}
             lg={6}
-            style={{ padding: "3vw", borderRight: "1px solid #d8b6fa" }}
+            style={{ padding: "3vw", borderRight: "1px solid #dccffe" }}
           >
             <Typography align="center" variant="h6" gutterBottom>
               Repairing Harm
