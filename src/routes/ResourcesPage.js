@@ -23,9 +23,9 @@ const ResourcesPage = () => {
             direction={"column"}
             spacing={2}
             style={{
-              padding: theme.spacing(8),
-              paddingTop: theme.spacing(4),
-              paddingBottom: theme.spacing(6),
+              padding: "5vw",
+              paddingTop: "3vh",
+              paddingBottom: "5vh",
               overflowWrap: "break-word",
               wordWrap: "break-word",
             }}
@@ -88,9 +88,9 @@ const ResourcesPage = () => {
             spacing={2}
             direction={"column"}
             style={{
-              padding: theme.spacing(8),
-              paddingTop: theme.spacing(4),
-              paddingBottom: theme.spacing(6),
+              padding: "5vw",
+              paddingTop: "3vh",
+              paddingBottom: "5vh",
               overflowWrap: "break-word",
               wordWrap: "break-word",
             }}

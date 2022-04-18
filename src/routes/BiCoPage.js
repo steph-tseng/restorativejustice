@@ -18,9 +18,9 @@ const BiCoPage = () => {
           direction={"column"}
           spacing={2}
           style={{
-            padding: theme.spacing(6),
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
           }}
         >
           <Grid item>
@@ -107,9 +107,9 @@ const BiCoPage = () => {
           direction={"column"}
           spacing={2}
           style={{
-            padding: theme.spacing(6),
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
           }}
         >
           <Grid item>
@@ -147,9 +147,9 @@ const BiCoPage = () => {
           direction={"column"}
           spacing={2}
           style={{
-            padding: theme.spacing(6),
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
           }}
         >
           <Grid item>
@@ -187,9 +187,9 @@ const BiCoPage = () => {
           direction={"column"}
           spacing={2}
           style={{
-            padding: theme.spacing(6),
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
           }}
         >
           <Grid item>
@@ -222,9 +222,9 @@ const BiCoPage = () => {
           direction={"column"}
           spacing={2}
           style={{
-            padding: theme.spacing(6),
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
           }}
         >
           <Grid item>
@@ -259,9 +259,9 @@ const BiCoPage = () => {
           direction={"column"}
           spacing={2}
           style={{
-            padding: theme.spacing(6),
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
           }}
         >
           <Grid item>
@@ -298,9 +298,9 @@ const BiCoPage = () => {
           direction={"column"}
           spacing={2}
           style={{
-            padding: theme.spacing(6),
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
           }}
         >
           <Grid item>
@@ -331,7 +331,6 @@ const BiCoPage = () => {
               </ol>
             </Typography>
           </Grid>
-          <Grid item></Grid>
         </Grid>
       </Paper>
     </Grid>

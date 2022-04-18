@@ -17,7 +17,7 @@ const AboutPage = () => {
           container
           direction={"column"}
           spacing="8"
-          style={{ padding: theme.spacing(8), paddingTop: theme.spacing(4) }}
+          style={{ padding: "5vw", paddingTop: "5vh", paddingBottom: "5vh" }}
         >
           <Grid item xs>
             <Typography variant="h4" gutterBottom>

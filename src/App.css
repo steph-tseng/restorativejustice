@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   margin: 0;  
 }
 
@@ -15,6 +15,12 @@
 .appbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: left;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

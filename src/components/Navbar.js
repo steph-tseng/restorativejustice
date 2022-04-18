@@ -30,6 +30,7 @@ const Navbar = () => {
             whiteSpace: "nowrap",
             flexWrap: "nowrap",
           }}
+          className="navbar"
         >
           <Grid item>
             <Button style={{ paddingTop: theme.spacing(1) }}>
@@ -54,7 +55,7 @@ const Navbar = () => {
             </Button>
           </Grid>
           <Grid item>
-            <Button style={{ paddingTop: theme.spacing(1) }}>
+            <Button>
               <Link
                 to="/modelsofrj"
                 style={{ textDecoration: "none", color: "#fff" }}
@@ -64,7 +65,7 @@ const Navbar = () => {
             </Button>
           </Grid>
           <Grid item>
-            <Button style={{ paddingTop: theme.spacing(1) }}>
+            <Button>
               <Link
                 to="/bico"
                 style={{ textDecoration: "none", color: "#fff" }}
@@ -74,7 +75,7 @@ const Navbar = () => {
             </Button>
           </Grid>
           <Grid item>
-            <Button style={{ paddingTop: theme.spacing(1) }}>
+            <Button>
               <Link
                 to="/resources"
                 style={{ textDecoration: "none", color: "#fff" }}
