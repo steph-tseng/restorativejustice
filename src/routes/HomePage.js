@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, useTheme } from "@mui/material";
+import { Typography, Grid, useTheme, Link } from "@mui/material";
 
 const HomePage = () => {
   const theme = useTheme();
@@ -13,8 +13,6 @@ const HomePage = () => {
         style={{
           backgroundColor: "#000",
           maxHeight: "100vh",
-          // width: "101vw",
-          // marginLeft: "-1vw",
           overflow: "hidden",
         }}
       >
@@ -126,9 +124,15 @@ const HomePage = () => {
             <Typography align="center">
               "Restorative justice places decision-making in the hands of the
               people who care the most—offenders and harmed parties" (
-              <a href="/modelsofrj#bib" style={{ textDecoration: "none" }}>
+              <Link
+                href="/resources#bib"
+                underline="hover"
+                target={"_blank"}
+                rel={"noreferrer"}
+                color={"secondary"}
+              >
                 Karp 2015:
-              </a>
+              </Link>
               9).
             </Typography>
           </Grid>

@@ -8,6 +8,15 @@
   pointer-events: none;
 }
 
+.appbar::-webkit-scrollbar {
+  display: none;
+}
+
+.appbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

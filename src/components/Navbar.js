@@ -14,6 +14,7 @@ const Navbar = () => {
           backgroundColor: "#CF9FFF",
           padding: theme.spacing(1),
         }}
+        className="appbar"
         id="back-to-top-anchor"
       >
         <Grid
@@ -21,13 +22,10 @@ const Navbar = () => {
           spacing={3}
           style={{
             display: "flex",
+            justifyContent: "center",
             [theme.breakpoints.down("md")]: {
               justifyContent: "left",
             },
-            [theme.breakpoints.up("lg")]: {
-              justifyContent: "center",
-            },
-            justifyContent: "center",
             overflow: "scroll",
             whiteSpace: "nowrap",
             flexWrap: "nowrap",
@@ -55,7 +53,6 @@ const Navbar = () => {
               </Link>
             </Button>
           </Grid>
-
           <Grid item>
             <Button style={{ paddingTop: theme.spacing(1) }}>
               <Link
@@ -73,6 +70,16 @@ const Navbar = () => {
                 style={{ textDecoration: "none", color: "#fff" }}
               >
                 <Typography>Inside the BiCo</Typography>
+              </Link>
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button style={{ paddingTop: theme.spacing(1) }}>
+              <Link
+                to="/resources"
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
+                <Typography>Resources</Typography>
               </Link>
             </Button>
           </Grid>

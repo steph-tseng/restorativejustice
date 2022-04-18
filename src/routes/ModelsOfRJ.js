@@ -2,6 +2,7 @@ import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import {
   Collapse,
   Grid,
+  Link,
   List,
   ListItemButton,
   ListItemText,
@@ -129,7 +130,6 @@ const ModelsOfRJ = (props) => {
             padding: theme.spacing(8),
             paddingTop: theme.spacing(4),
             paddingBottom: theme.spacing(6),
-            overflow: "auto",
           }}
         >
           <Grid
@@ -139,23 +139,45 @@ const ModelsOfRJ = (props) => {
               marginTop: theme.spacing(2),
             }}
           >
-            <Typography variant="h5" id="BasicOverview" gutterBottom>
-              Basic Overview
-            </Typography>
-            <Typography>
-              Here is a video from an instructor at University of San Diego's
-              Center for Restorative Justice introducing RJ.
-            </Typography>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/SKKhlCaf6ZQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style={{ marginTop: "2vh" }}
-            ></iframe>
+            <Grid container style={{ marginBottom: theme.spacing(4) }}>
+              <Grid item>
+                <Typography variant="h5" id="BasicOverview" gutterBottom>
+                  Basic Overview
+                </Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography>
+                  Here is a video from an instructor at University of San
+                  Diego's Center for Restorative Justice introducing RJ.
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                style={{
+                  position: "relative",
+                  paddingBottom: "56.25%",
+                  paddingTop: "30px",
+                  height: 0,
+                  width: "100%",
+                  marginTop: theme.spacing(2),
+                }}
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/SKKhlCaf6ZQ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+              </Grid>
+            </Grid>
           </Grid>
           <Grid item xs={12}>
             <Grid container style={{ width: "100%" }}>
@@ -176,25 +198,43 @@ const ModelsOfRJ = (props) => {
               <Typography>
                 Restorative Conferencing tends to follow a script, a template of
                 which can be found here:{" "}
-                <a
+                <Link
                   href="https://www.iirp.edu/news/restorative-conference-facilitator-script"
                   target={"_blank"}
+                  underline={"hover"}
                   rel={"noreferrer"}
+                  color={"secondary"}
                 >
                   RJ Conference Script
-                </a>
+                </Link>
               </Typography>
             </Grid>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7xE8pIdoZNg"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style={{ marginTop: "2vh" }}
-            ></iframe>
+            <Grid
+              item
+              style={{
+                position: "relative",
+                paddingBottom: "56.25%",
+                paddingTop: "30px",
+                height: 0,
+                width: "100%",
+                marginTop: theme.spacing(2),
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/7xE8pIdoZNg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </Grid>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" id="VOC">
@@ -213,16 +253,32 @@ const ModelsOfRJ = (props) => {
               maintain a safe and structured environment while the victim and
               offender are each able to share their sides of the story.
             </Typography>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/TxLxet6Q1ks"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style={{ marginTop: "2vh" }}
-            ></iframe>
+            <Grid
+              item
+              style={{
+                position: "relative",
+                paddingBottom: "56.25%",
+                paddingTop: "30px",
+                height: 0,
+                width: "100%",
+                marginTop: theme.spacing(2),
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/TxLxet6Q1ks"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </Grid>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" id="CircleProcesses">
@@ -241,16 +297,32 @@ const ModelsOfRJ = (props) => {
               returning to a community after incarceration or suspension (USD
               2022).
             </Typography>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/1-RZYSTJAAo"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style={{ marginTop: "2vh" }}
-            ></iframe>
+            <Grid
+              item
+              style={{
+                position: "relative",
+                paddingBottom: "56.25%",
+                paddingTop: "30px",
+                height: 0,
+                width: "100%",
+                marginTop: theme.spacing(2),
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/1-RZYSTJAAo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </Grid>
           </Grid>
           <Grid item xs={12}>
             <Typography variant="h6" id="TruthAndReconciliation">
@@ -265,16 +337,32 @@ const ModelsOfRJ = (props) => {
               the 1990s led by Bishop Desmond Tutu. He wrote about it in No
               Future Without Forgiveness (USD 2022).
             </Typography>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/W3taLI3moaM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              style={{ marginTop: "2vh" }}
-            ></iframe>
+            <Grid
+              item
+              style={{
+                position: "relative",
+                paddingBottom: "56.25%",
+                paddingTop: "30px",
+                height: 0,
+                width: "100%",
+                marginTop: theme.spacing(2),
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/W3taLI3moaM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </Grid>
           </Grid>
         </Grid>
       </Paper>
@@ -283,6 +371,7 @@ const ModelsOfRJ = (props) => {
         style={{
           width: "80vw",
           marginTop: theme.spacing(6),
+          marginBottom: theme.spacing(6),
         }}
       >
         <Grid
@@ -291,6 +380,7 @@ const ModelsOfRJ = (props) => {
           spacing={2}
           style={{
             padding: theme.spacing(8),
+            paddingTop: theme.spacing(6),
             paddingBottom: theme.spacing(6),
           }}
         >
@@ -342,9 +432,31 @@ const ModelsOfRJ = (props) => {
             </Typography>
             <Typography style={{ textIndent: "2rem" }}>
               RJ conferencing in higher education looks largely the same as it
-              would otherwise. This RJ practice requires trained facillitators
-              (USD is one of the programs that provides such training specific
-              to higher education).
+              would otherwise. This RJ practice requires trained facillitators (
+              <Link
+                href="https://www.sandiego.edu/soles/restorative-justice/"
+                underline="hover"
+                rel={"noreferrer"}
+                color={"secondary"}
+              >
+                USD
+              </Link>{" "}
+              is one of the programs that provides such training specific to
+              higher education).
+            </Typography>
+            <Typography style={{ textIndent: "2rem" }}>
+              The biggest issue with RJ conferencing is that it requires a lot
+              of time and also requires the aforementioned training. Thus, it is
+              not accessible to groups that do not have access to such training.
+              The process takes a lot of time because of how much preparation
+              the facilitator(s) must do to prepare for the conference. Before
+              the conference may occur, the facillitator(s) must meet with the
+              two (or more) involved parties so that they are aware of the
+              situation as well as come up with a preliminary list of actions
+              for the offender to perform to meet the needs of the person they
+              caused harm to. Because of how long the process takes, it is not
+              necessarily helpful in a higher education setting. This is due to
+              the high turnover rate.
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -359,12 +471,13 @@ const ModelsOfRJ = (props) => {
             </Typography>
             <Typography gutterBottom style={{ textIndent: "2rem" }}>
               RJ circles can be especially useful within dorms or classrooms,
-              when the parties are in constant contact. If a member of a hall
-              commits a microaggression against another member of the hall, it
-              can make that member feel unwelcome and unsafe within their living
-              space. It is also important to involve all of the members of the
-              hall so that the perpetrator can be held accountable for future
-              microaggressions.
+              when the parties are in constant contact. One example of a more
+              specific type of incident that this practice may be useful for is
+              microaggressions. If a member of a hall commits a microaggression
+              against another member of the hall, it can make that member feel
+              unwelcome and unsafe within their living space. It is also
+              important to involve all of the members of the hall so that the
+              perpetrator can be held accountable for future microaggressions.
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -376,60 +489,14 @@ const ModelsOfRJ = (props) => {
               (e.g. the Honor Board in the BiCo). This practice calls for
               integrating more RJ principles within their processes.
             </Typography>
-          </Grid>
-        </Grid>
-      </Paper>
-      <Paper
-        elevation={3}
-        style={{
-          width: "80vw",
-          marginTop: theme.spacing(6),
-          marginBottom: theme.spacing(6),
-        }}
-      >
-        <Grid
-          container
-          spacing={2}
-          style={{
-            padding: theme.spacing(8),
-            paddingBottom: theme.spacing(6),
-            overflowWrap: "break-word",
-            wordWrap: "break-word",
-          }}
-        >
-          <Grid item xs={12}>
-            <Typography variant="h5" id="bib" gutterBottom>
-              Bibliography
+            <Typography style={{ textIndent: "2rem" }}>
+              This is the most efficient RJ practice, but that efficiency also
+              risks board members no longer treating the cases as individual.
+              Because board members are able to act as stand-ins for the victim
+              and community members, the victim does not need to be involved in
+              the process. This resolves a problem with the other two practices,
+              because they both require the victim's participation.
             </Typography>
-            <Grid item xs={12}>
-              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
-                Karp, David R.{" "}
-                <i>
-                  The Little Book of Restorative Justice for Colleges and
-                  Universities.
-                </i>{" "}
-                New York: Good Books, 2015.
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
-                University of San Diego. “Research and Theory.” Accessed April
-                12, 2022.{" "}
-                <a href="https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php">
-                  https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php.
-                </a>
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
-                Zehr, Howard. <i>The Little Book of Restorative Justice.</i> New
-                York: Good Books, 2015.{" "}
-                <a href="https://www.sandiego.edu/soles/restorative-justice/">
-                  https://www.sandiego.edu/soles/restorative-justice/
-                </a>
-                .
-              </Typography>
-            </Grid>
           </Grid>
         </Grid>
       </Paper>

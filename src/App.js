@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./routes/HomePage";
@@ -9,6 +10,7 @@ import NotFoundPage from "./routes/NotFoundPage";
 import ScrollTop from "./components/ScrollTop";
 import { Fab } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import ResourcesPage from "./routes/ResourcesPage";
 
 function App(props) {
   return (
@@ -19,6 +21,7 @@ function App(props) {
         <Route path="about" element={<AboutPage />} />
         <Route path="modelsofrj" element={<ModelsOfRJ />} />
         <Route path="bico" element={<BiCoPage />} />
+        <Route path="resources" element={<ResourcesPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <ScrollTop {...props}>
