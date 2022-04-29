@@ -317,6 +317,23 @@ const BiCoPage = () => {
               students on the core processes of the college.
             </Typography>
             <Typography style={{ textIndent: "2rem" }}>
+              I feel as though our existing systems would very much benefit from
+              incorporating RJ values and practices to help address concerns
+              rather than letting them fester. Restorative justice is
+              fundamentally about building community and safety, things I feel
+              have been lacking since the pandemic began. I really value the
+              people that I met during my years at BMC and the connections that
+              I made. I got to meet so many wonderful people that will
+              definitely stay with me after graduating. Most of the sources of
+              conflict that arose were because of poor communication and bad
+              conflict resolution skills. I hope that future students will be
+              able to have even better experiences than I did. I hope that they
+              will have the tools to de-escalate and grow from the conflicts
+              that naturally arise. Conflicts are inevitable. We get to choose
+              whether we grow closer or further from one another based on how we
+              respond to them.
+            </Typography>
+            <Typography style={{ textIndent: "2rem" }}>
               As a final note, I want to say that I am incredibly thankful to
               all of my interviewees for their contributions to my project. I am
               also thankful to everyone who has engaged with this website and
