@@ -38,20 +38,20 @@ const ResourcesPage = () => {
                 <Typography
                   style={{ textIndent: "-36px", paddingLeft: "36px" }}
                 >
-                  Karp, David R.{" "}
+                  Karp, David R. 2015{" "}
                   <i>
                     The Little Book of Restorative Justice for Colleges and
                     Universities.
                   </i>{" "}
-                  New York: Good Books, 2015.
+                  New York, NY: Good Books.
                 </Typography>
               </Grid>
               <Grid item xs={12}>
                 <Typography
                   style={{ textIndent: "-36px", paddingLeft: "36px" }}
                 >
-                  University of San Diego. “Research and Theory.” Accessed April
-                  12, 2022.{" "}
+                  University of San Diego. 2022. “Research and Theory.” Accessed
+                  April 12, 2022.{" "}
                   <Link
                     href="https://www.sandiego.edu/soles/restorative-justice/research-and-theory.php"
                     target={"_blank"}
@@ -96,7 +96,10 @@ const ResourcesPage = () => {
             }}
           >
             <Grid item>
-              <Typography variant="h5">References</Typography>
+              <Typography variant="h5">Further Reading</Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="h6">Links</Typography>
             </Grid>
             <Grid item>
               <Link
@@ -152,6 +155,61 @@ const ResourcesPage = () => {
               >
                 USD Center of Restorative Justice Youtube Channel
               </Link>
+            </Grid>
+            <Grid item style={{ marginTop: "3vh" }}>
+              <Typography variant="h6">Books</Typography>
+            </Grid>
+            <Grid item>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Armour, Marilyn and Mark Umbreit. 2018.{" "}
+                <i>Violence, Restorative Justice, and Forgiveness.</i>{" "}
+                Philadelphia, PA: Jessica Kingsley Publishers.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Boyes-Watson, Carolyn. 2008.{" "}
+                <i>Peacemaking Circles and Urban Youth.</i>
+                St. Paul, MN: Living Justice Press.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Boyes-Watson, Carolyn and Kay Pranis. 2015.{" "}
+                <i>Circle Forward: Building a Restorative School Community.</i>{" "}
+                St. Paul, MN: Living Justice Press.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Braithwaite, John. 1989. <i>Crime, Shame, and Reintegration.</i>{" "}
+                New York: Cambridge University Press.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Braithwaite, John. 2002.{" "}
+                <i>Restorative Justice and Responsive Regulation.</i> New York:
+                Oxford University Press.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Burnett, Nick and Margaret Thorsborne. 2015.{" "}
+                <i>Restorative Practice and Special Needs.</i> Philadelphia, PA:
+                Jessica Kingsley Publishers.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Davis, F. E. (2019).{" "}
+                <i>
+                  The Little Book of Race and Restorative Justice: Black Lives,
+                  Healing, and US Social Transformation.
+                </i>{" "}
+                New York, NY: Good Books.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Llewellyn, Jennifer and Daniel Philpott. 2014.{" "}
+                <i>Restorative Justice, Reconciliation, and Peacebuilding.</i>{" "}
+                New York: Oxford.
+              </Typography>
+              <Typography style={{ textIndent: "-36px", paddingLeft: "36px" }}>
+                Mills, Linda. 2008.{" "}
+                <i>
+                  Violent Partners: A Breakthrough Plan for Ending the Cycle of
+                  Abuse.
+                </i>{" "}
+                New York: Basic Books.
+              </Typography>
             </Grid>
           </Grid>
         </Paper>

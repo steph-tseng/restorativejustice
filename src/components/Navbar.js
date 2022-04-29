@@ -23,6 +23,9 @@ const Navbar = () => {
           style={{
             display: "flex",
             justifyContent: "center",
+            [theme.breakpoints.up("lg")]: {
+              justifyContent: "center",
+            },
             [theme.breakpoints.down("md")]: {
               justifyContent: "left",
             },

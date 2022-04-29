@@ -304,6 +304,45 @@ const BiCoPage = () => {
           }}
         >
           <Grid item>
+            <Typography variant="h5">Final Thoughts</Typography>
+          </Grid>
+          <Grid item>
+            <Typography style={{ textIndent: "2rem" }}>
+              I found that these interviews revealed disconnect I expected to
+              find between students and the administration. None of the students
+              I interviewed really had much knowledge of the social Honor Code
+              and thought much about it at all. This seems worrying for such a
+              core component of the institution. I would love if there would be
+              more communication between the administrators/faculty and the
+              students on the core processes of the college.
+            </Typography>
+            <Typography style={{ textIndent: "2rem" }}>
+              As a final note, I want to say that I am incredibly thankful to
+              all of my interviewees for their contributions to my project. I am
+              also thankful to everyone who has engaged with this website and
+              hope that they have gotten something out of it.
+            </Typography>
+          </Grid>
+        </Grid>
+      </Paper>
+      <Paper
+        elevation={3}
+        style={{
+          width: "80vw",
+          marginBottom: theme.spacing(5),
+        }}
+      >
+        <Grid
+          container
+          direction={"column"}
+          spacing={2}
+          style={{
+            padding: "5vw",
+            paddingTop: "5vh",
+            paddingBottom: "5vh",
+          }}
+        >
+          <Grid item>
             <Typography variant="h5">Appendix</Typography>
           </Grid>
           <Grid item>
