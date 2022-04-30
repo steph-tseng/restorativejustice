@@ -102,6 +102,52 @@ const BiCoPage = () => {
           marginBottom: theme.spacing(5),
         }}
       >
+        <Paper
+          elevation={3}
+          style={{
+            width: "80vw",
+            marginBottom: theme.spacing(5),
+          }}
+        >
+          <Grid
+            container
+            direction={"column"}
+            spacing={2}
+            style={{
+              padding: "5vw",
+              paddingTop: "5vh",
+              paddingBottom: "5vh",
+            }}
+          >
+            <Grid item>
+              <Typography variant="h6">
+                Senior STEM Major at Bryn Mawr, White American
+              </Typography>
+              <Typography style={{ textIndent: "2rem" }}>
+                This interviewee was the only student I interviewed who actually
+                held the (social) honor code in high regard. They said that, "to
+                [them], the most important part of the social honor code is
+                respecting one another and giving one another the benefit of the
+                doubt." One common theme through this person's answers was
+                trust, which they felt was integral to maintaining the honor
+                code's role as a way to create a safe space on the campus. One
+                thing that this interviewee highlighted was how easily that
+                trust can be eroded and how one's positionality can determine
+                their ability to trust the honor code. They also brought up an
+                important point about ensuring that people who have caused harm
+                are actually held accountable and removed from positions of
+                power, as simply seeing those people in those positions can
+                create an image that the institution should not want to create.
+                Because this website is about restorative justice, it is
+                important to acknowledge these negative feelings that people can
+                harbor toward the people who erode their trust in the
+                institution. The problem can deepen from a hurt that they feel
+                from an action to a mistrust in the institution that should be
+                protecting them.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
         <Grid
           container
           direction={"column"}
@@ -131,7 +177,6 @@ const BiCoPage = () => {
               they approach certain topics and even whether they bring up those
               topics at all.
             </Typography>
-            <Typography></Typography>
           </Grid>
         </Grid>
       </Paper>
