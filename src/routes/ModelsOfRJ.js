@@ -177,6 +177,27 @@ const ModelsOfRJ = (props) => {
                   }}
                 />
               </Grid>
+              <Grid item style={{ marginTop: theme.spacing(2) }}>
+                <Typography style={{ textIndent: "2rem" }}>
+                  One aspect of RJ that I would like to highlight is harm. Karp
+                  (2015) provides an important distinction between the different
+                  types of harm that RJ is meant to repair: “material/physical,
+                  emotional/spiritual, and relational/communal” (34). This
+                  differentiation acknowledges the disparities in the harm that
+                  a single incident may cause and includes each of the involved
+                  parties. These differences in form also mean that the offender
+                  must perform different acts to make up for the harm they have
+                  caused. These acts come in three corresponding forms: 1)
+                  apology, 2) restitution, and 3) community service (40).
+                  Apologies “are expressions of remorse and the willingness to
+                  take responsibility for a transgression” (40). Meanwhile,
+                  restitution “is monetary payment or labor that pays for
+                  financial losses” (41). Finally, community service can achieve
+                  two different ends: “making amends to the community” and
+                  providing “an opportunity to demonstrate good citizenship”
+                  (42).
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12}>
